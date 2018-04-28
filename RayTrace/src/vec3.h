@@ -72,6 +72,12 @@ inline vec3&  vec3::operator/=(const vec3 &v2) {
 	e[2] /= v2.e[2];
 	return *this;
 }
+inline vec3&  vec3::operator/=(const float v2) {
+	e[0] /= v2;
+	e[1] /= v2;
+	e[2] /= v2;
+	return *this;
+}
 inline vec3&  vec3::operator+=(const vec3 &v2) {
 	e[0] += v2.e[0];
 	e[1] += v2.e[1];
